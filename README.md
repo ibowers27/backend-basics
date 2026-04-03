@@ -92,6 +92,16 @@ Common HTTP status codes used in REST API responses are grouped by category:
 
 3. Initialize NPM inside the folder by running this command in your terminal:
 
+```javascript
+npm init -y
+```
+
+4. Install Express:
+
+```javascript
+npm install express
+```
+
 ## Useful Links:
 
 - https://nodejs.org/en
