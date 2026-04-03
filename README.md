@@ -166,6 +166,21 @@ Backend Basics...
 
 - So, we have our express server running with the first GET API on the root route ('/').
 
+* Note:
+
+- The following is an **anonymous asynchronous arrow function** commonly used as **a route handler** in Express.js:
+
+```javascript
+// also called the "call-back function"
+async (req, res) => {
+  res.send("Backend Basics...");
+};
+```
+
+- **async** means the function can use **await** inside it for asynchronous operations such as reading from a database or calling an API.
+- **req** stands for the HTTP request object. It contains information sent by the client, such as URL parameters, query strings, headers, and request body.
+- **res** stands for the HTTP response object. It is used to send a response back to the client.
+- **res.send("Backend Basics...")** sends the text "Backend Basics..." back to the browser or client.
 
 ## Useful Links:
 
