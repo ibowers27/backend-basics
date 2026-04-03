@@ -182,6 +182,65 @@ async (req, res) => {
 - **res** stands for the HTTP response object. It is used to send a response back to the client.
 - **res.send("Backend Basics...")** sends the text "Backend Basics..." back to the browser or client.
 
+7. Declare a local object (later will move them to a database):
+
+```javascript
+// inside index.js
+// before app.get(...)
+const courses = [
+  {
+    id: 1,
+    name: "SWE",
+    enrollment: 20,
+  },
+  {
+    id: 2,
+    name: "FP",
+    enrollment: 10,
+  },
+  {
+    id: 3,
+    name: "Python",
+    enrollment: 30,
+  },
+];
+```
+
+8. Create a new route (endpoint) to get all the data (courses):
+
+```javascript
+// in the same index.js file
+app.get("/api/courses", async (req, res) => {
+  res.send(courses);
+});
+```
+
+- Now visit "http://localhost:3000/api/courses" on your browser and you should be able to see all the courses.
+- Note:
+  - `app.get(...)` tells `Express.js` to listen for HTTP GET requests.
+  - "/api/courses" is the route path. When someone visits that URL, this function runs.
+  - `async (req, res) => { ... }` is the route handler.
+  - res.send(courses) sends the courses data back to the client.
+
+  - You can describe "/api/courses" as:
+    - a route
+    - an API route
+    - an endpoint
+    - specifically, a GET endpoint for courses
+
+9. Create another route to get a specific data (example: only one course, say 1):
+
+```javascript
+app.get("/api/courses/:id", async (req, res) => {
+  const course = courses.find((c) => c.id === parseInt(req.params.id));
+  if (!course) res.status(404).send("Course does not exist...");
+  else res.send(course);
+});
+```
+
+- Now test it with various routes like '/api/courses/1', '/api/courses/5', etc.
+- Note: Both `.find()` and `parseInt()` are built into modern JavaScript and are available in Node.js.
+
 ## Useful Links:
 
 - https://nodejs.org/en
