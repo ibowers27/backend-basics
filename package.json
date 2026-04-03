@@ -1,7 +1,7 @@
 {
   "name": "backend-basics",
   "version": "1.0.0",
-  "description": "",
+  "description": "We will use ....",
   "license": "ISC",
   "author": "",
   "type": "commonjs",
@@ -12,5 +12,14 @@
   "dependencies": {
     "express": "^5.2.1",
     "joi": "^18.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FahmidaHamid/backend-basics.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/FahmidaHamid/backend-basics/issues"
+  },
+  "homepage": "https://github.com/FahmidaHamid/backend-basics#readme"
 }
