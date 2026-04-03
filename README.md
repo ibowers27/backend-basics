@@ -6,11 +6,13 @@ We will use ....
 
 ### Node.js
 
-Node.js® is a free, open-source, cross-platform JavaScript runtime environment Node lets developers create servers, web apps, command line tools and scripts.We often use Node.js to build backend services (APIs).
+- Node.js® is a free, open-source, cross-platform JavaScript runtime environment Node lets developers create servers, web apps, command line tools and scripts.We often use Node.js to build backend services (APIs).
 
 ### Express.js
 
-Express.js is a widely-used, minimalist web application framework for Node.js. It provides a robust set of features for building web and mobile applications and APIs on top of the Node.js runtime environment. 
+- Express.js is a widely-used, minimalist web application framework for Node.js. It provides a robust set of features for building web and mobile applications and APIs on top of the Node.js runtime environment. 
+
+- It is a framework built on top of Node.js that allows you to create your Backend with ease. You can use Express in combination with frontend frameworks like React, Angular, or Vue to build full-stack applications.
 
 ### HTTP Protocol
 
@@ -73,7 +75,22 @@ Common HTTP status codes used in REST API responses are grouped by category:
   - 502 Bad Gateway – Server received an invalid response from another server
   - 503 Service Unavailable – Server is temporarily unavailable or overloaded
 
-## What do we mean by CRUD API?
+### What do we mean by CRUD API?
+
+- In web development, CRUD (Create-Read-Update-Delete) operations are the bread and butter of backend systems. Every web application interacts with a database to perform these four core operations. Whether it's a social media platform, an e-commerce website, or a weather app, they all rely on creating, reading, updating, and deleting data.
+
+- We will build a basic CRUD API today.
+
+## ToDos:
+
+1. Install Node.js and Postman
+
+- https://nodejs.org/en/download
+- https://www.postman.com/
+
+2. Create a project directory (say, BackendBasics) and then start it with your VS Code. You may create a file, like `index.js`.
+
+3. Initialize NPM inside the folder by running this command in your terminal:
 
 ## Useful Links:
 
